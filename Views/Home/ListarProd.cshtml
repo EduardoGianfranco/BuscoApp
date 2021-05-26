@@ -1,0 +1,38 @@
+@model List<Producto>
+
+@{
+    ViewData["Title"] = "Lista de Productos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Lista de Productos</h1>
+    
+<table class="Table">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Foto</th>
+            <th>Descripciín</th>
+            <th>Precio</th>
+            <th>Celular</th>
+            <th>Lugar de Compra</th>
+            <th>Nombre de Comprador</th>
+            <th>Categoría</th>
+            <th>Mensaje</th>
+        </tr>
+        @foreach (var datos in Model)
+        {
+        <tr>
+            <th>@datos.Id</th>
+            <th>@datos.NombreP</th>
+            <th><img src=@datos.Foto></th>
+            <th><p>@datos.Descripcion</p></th>
+            <th>@datos.Precio</th>
+            <th>@datos.Celular</th>
+            <th>@datos.LugarCompra</th>
+            <th>@datos.NomComprador</th>
+            <th>@datos.Categoria</th>
+        </tr>
+        }
+</table>
+</div>

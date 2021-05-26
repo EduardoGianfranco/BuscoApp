@@ -10,6 +10,6 @@ namespace BuscoApp.Models
         public int Celular { get; set; }
         public string LugarCompra { get; set; }
         public string NomComprador { get; set; }
-        public Categoria Categoria { get; set;}
+        public string Categoria { get; set;}
     }
 }
