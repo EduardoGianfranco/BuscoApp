@@ -25,7 +25,7 @@ namespace BuscoApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BuscoContext>(dco => dco.UseSqlServer("Server=DESKTOP-HD2QEE3;Database=PiranaBD;Integrated Security=true"));
+            services.AddDbContext<BuscoContext>(dco => dco.UseSqlServer("Server=DESKTOP-HD2QEE3;Database=BuscoApp;Integrated Security=true"));
             services.AddControllersWithViews();
         }
 
